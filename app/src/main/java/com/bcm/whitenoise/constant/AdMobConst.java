@@ -23,7 +23,7 @@ public class AdMobConst {
     }
 
     // 2025/02/19 : 메인 하단 띠배너 사용 여부 추가됨
-    public static final boolean USE_AD_EXPOSE_BANNER = false;
+    public static final boolean USE_AD_EXPOSE_BANNER = true;
 
     // 전면 광고 노출 조건
     public static final int AD_EXPOSE_COUNT_PAGE = 3;
