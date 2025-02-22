@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient_main"
+    tools:context=".ui.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ivAds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--  로고  -->
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/img_main_logo"/>
+
+            <!--  카테고리  -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_main_category"/>
+
+            <!--  리스트 타이틀  -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/main_rec_contents"
+                android:textSize="22dp"
+                android:textColor="@color/white"/>
+
+            <!--  리스트  -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_main_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--  카테고리  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal"
+        android:background="#ff000000"
+        android:visibility="invisible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_main_category"/>
+
+    <!--  광고  -->
+    <LinearLayout
+        android:id="@+id/ivAds"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/img_main_ads"
+        android:background="#220044"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--  선택된 음악  -->
+    <LinearLayout
+        android:id="@+id/llSelectedMusic"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ivAds">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="#220044"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!--  이미지 영역  -->
+            <ImageView
+                android:id="@+id/ivSelectedCover"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_list_1" />
+
+            <LinearLayout
+                android:id="@+id/llPause"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivSelectedPlay"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_play" />
+            </LinearLayout>
+
+            <!--  정보 영역  -->
+            <LinearLayout
+                android:id="@+id/llSelectedInfo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:id="@+id/tvSelectedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    tools:text="Daily Calm"/>
+
+                <TextView
+                    android:id="@+id/tvSelectedInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    tools:text="명상"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSelectedClose"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_close" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sbGauge"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:backgroundTint="#99000000"
+            android:progressTint="@color/white"
+            android:thumbTint="@color/transparent"
+            tools:progress="80"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/indicatorLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

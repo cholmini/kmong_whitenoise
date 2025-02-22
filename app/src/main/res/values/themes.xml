@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WhiteNoise" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- No Title Bar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Make Full Screen -->
+        <item name="android:windowFullscreen">true</item>
+
+        <!-- color high light -->
+        <item name="colorControlHighlight">#11ffffff</item>
+    </style>
+    <style name="AppTheme.NumberPicker" parent="">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="colorControlNormal">#00000000</item>
+    </style>
+</resources>

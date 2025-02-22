@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  공통리소스  -->
+    <string name="app_name">익명이 백색소음</string>
+    <string name="copy_right">ⓒ2025. 익명이 / 아이티프렌즈 / 연희개발팀 All rights reserved.</string>
+    <string name="common_confirm">확인</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_hour">시간</string>
+    <string name="common_min">분</string>
+    <string name="common_sec">초</string>
+    <string name="common_singer">아티스트</string>
+
+    <!--  음악관련 리소스  -->
+    <string name="music_type_all">전체</string>
+    <string name="music_type_meditation">명상</string>
+    <string name="music_type_sing">노래</string>
+    <string name="music_type_goodnight">굿나잇</string>
+    <string name="music_type_classic">클래식</string>
+    <string name="music_type_jazz">재즈</string>
+    <string name="music_type_whitenoise">백색소음</string>
+    <string name="music_type_etc">기타</string>
+
+    <!--  서브메인(타이틀) 화면  -->
+    <string name="submain_app_name_1">익명이</string>
+    <string name="submain_app_name_2">백색소음</string>
+    <string name="submain_main_btn_name">화면을 클릭해주세요</string>
+
+    <!--  메인 화면  -->
+    <string name="main_rec_contents">추천 콘텐츠</string>
+    <string name="main_back_press">이전 버튼을 한번더 누르면 앱이 종료됩니다.</string>
+
+    <!--  재생 화면  -->
+    <string name="player_share_text">백색소음으로 생활의 평안을 누려보세요.</string>
+    <string name="player_repeat_on">한곡 반복</string>
+    <string name="player_repeat_off">한곡 반복 해제</string>
+
+    <!--  타이머 화면  -->
+    <string name="settimer_title">수면 타이머</string>
+    <string name="settimer_now_timer">현재 타이머</string>
+    <string name="settimer_desc">플레이리스트를 얼마 동안 재생하시겠습니까?</string>
+    <string name="settimer_new_timer">새 타이머 설정</string>
+    <string name="settimer_cancel_timer">타이머 취소</string>
+    <string name="settimer_set_timer">타이머 설정</string>
+    <string name="settimer_finish_timer">타이머 종료</string>
+
+    <!--  팝업  -->
+    <string name="alert_finish_play">수면 타이머로 음악재생이 종료되었습니다 :)</string>
+</resources>

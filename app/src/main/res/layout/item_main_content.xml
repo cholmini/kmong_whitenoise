@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/background_black_r20"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp">
+
+    <!--  라운딩 디자인  -->
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <!--  이미지 영역  -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_list_1" />
+        </androidx.cardview.widget.CardView>
+
+        <!--  정보 영역  -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                tools:text="명상 • 22분"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="Daily Calm"/>
+
+            <TextView
+                android:id="@+id/tvComposer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="울라사"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
