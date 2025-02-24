@@ -29,7 +29,7 @@ public class MusicList {
 
     // 음악정보 배열생성 (여기에서 앱에 표시될 음악을 추가/삭제)
     private void makeMusicList() {
-        // 제목 / 작곡가 / 음악 총 재생시간 / 음악 파일명 / 이미지 파일명 / gif 이미지 파일명
+        // 제목 / 작곡가 / 음악 총 재생시간 / 음악 파일명 / 이미지 파일명 / gif 이미지 파일명 / 수정 필요
         addMusicList(MusicConst.type.Meditation.name(), "Emotional Piano Music","SigmaMusicArt","133","no_1_emotional_piano_music","img_list_1", "gif_no_1");
         addMusicList(MusicConst.type.Goodnight.name(), "Summer Memories","Top-Flow","112","no_2_summer_memories","img_list_2", "gif_no_2");
         addMusicList(MusicConst.type.Sing.name(), "Lost in Dreams","Kulakovka","195","no_3_lost_in_dreams","img_list_3", "gif_no_3");
