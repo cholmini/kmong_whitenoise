@@ -29,7 +29,7 @@ public class MusicList {
 
     // 음악정보 배열생성 (여기에서 앱에 표시될 음악을 추가/삭제)
     private void makeMusicList() {
-        //함수명,제목,작곡가,음악 총 재생시간,음악 파일명,이미지 파일명,gif 이미지 파일명,
+        //함수명,제목,작곡가,음악 총 재생시간,음악 파일명,이미지 파일명,gif 이미지 파일명
         addMusicList(MusicConst.type.Meditation.name(),"바보빅터","호야킴 데 포사다","133","no_1_emotional_piano_music","img_list_1","gif_no_1");
         addMusicList(MusicConst.type.Goodnight.name(),"무라카미T 내가 사랑한 티셔츠","무라카미 하루키","112","no_2_summer_memories","img_list_2","gif_no_2");
         addMusicList(MusicConst.type.Sing.name(),"색체가 없는 다자키 쓰쿠루와 그가 순례를 떠난 해","무라카미 하루키","195","no_3_lost_in_dreams","img_list_3","gif_no_3");
