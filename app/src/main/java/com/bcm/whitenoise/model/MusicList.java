@@ -29,12 +29,13 @@ public class MusicList {
 
     // 음악정보 배열생성 (여기에서 앱에 표시될 음악을 추가/삭제)
     private void makeMusicList() {
-        // 제목 / 작곡가 / 음악 총 재생시간 / 음악 파일명 / 이미지 파일명 / gif 이미지 파일명 / 수정 필요 / 완료됨
-        addMusicList(MusicConst.type.Meditation.name(), "Emotional Piano Music","SigmaMusicArt","133","no_1_emotional_piano_music","img_list_1", "gif_no_1");
-        addMusicList(MusicConst.type.Goodnight.name(), "Summer Memories","Top-Flow","112","no_2_summer_memories","img_list_2", "gif_no_2");
-        addMusicList(MusicConst.type.Sing.name(), "Lost in Dreams","Kulakovka","195","no_3_lost_in_dreams","img_list_3", "gif_no_3");
-        addMusicList(MusicConst.type.Meditation.name(), "Stylish Deep Electronic","RoyaltyFreeMusic","96","no_4_stylish_deep_electronic","img_list_4", "gif_no_4");
-        addMusicList(MusicConst.type.Meditation.name(), "Motivational","DayNightMorning","90","no_5_motivational_background","img_list_5", "gif_no_5");
+        //함수명,제목,작곡가,음악 총 재생시간,음악 파일명,이미지 파일명,gif 이미지 파일명,
+        addMusicList(MusicConst.type.Meditation.name(),"바보빅터","호야킴 데 포사다","133","no_1_emotional_piano_music","img_list_1","gif_no_1");
+        addMusicList(MusicConst.type.Goodnight.name(),"무라카미T 내가 사랑한 티셔츠","무라카미 하루키","112","no_2_summer_memories","img_list_2","gif_no_2");
+        addMusicList(MusicConst.type.Sing.name(),"색체가 없는 다자키 쓰쿠루와 그가 순례를 떠난 해","무라카미 하루키","195","no_3_lost_in_dreams","img_list_3","gif_no_3");
+        addMusicList(MusicConst.type.Meditation.name(),"세상에 빛나지 않는 별은 없어","김미라","96","no_4_stylish_deep_electronic","img_list_4","gif_no_4");
+        addMusicList(MusicConst.type.Meditation.name(),"중국행 슬로보트","무라카미 하루키","90","no_5_motivational_background","img_list_5","gif_no_5");
+        addMusicList(MusicConst.type.Meditation.name(),"무라카미 하루키 잡문집","무라카미 하루키","90","no_5_motivational_background","img_list_5","gif_no_5");
 
         // 목록 다수 표시를 위해 중복해서 추가
         addMusicList(MusicConst.type.Meditation.name(), "Emotional Piano MusicEmotional Piano\n\n\uD83E\uDDBEMusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano MusicEmotional Piano Music","SigmaMusicArtSigmaMusicArtSigmaMusicArtSigmaMusicArtSigmaMusicArtSigmaMusicArt","133","no_1_emotional_piano_music","img_list_1", "gif_no_1");
