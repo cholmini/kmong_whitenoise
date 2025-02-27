@@ -22,7 +22,7 @@ public class AdMobConst {
         }
     }
 
-    // 2025/02/19 : 메인 하단 띠배너 사용 여부 추가됨
+    // 2025/02/19 : 메인 하단 띠배너 사용 여부 추가됨,
     public static final boolean USE_AD_EXPOSE_BANNER = false;
 
     // 전면 광고 노출 조건
