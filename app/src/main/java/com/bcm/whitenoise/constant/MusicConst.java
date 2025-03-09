@@ -24,6 +24,7 @@ public class MusicConst {
         Classic,
         Jazz,
         Whitenoise,
+        Nature,
         Etc
     }
 
@@ -43,6 +44,8 @@ public class MusicConst {
             return _context.getString(R.string.music_type_jazz);
         } else if (_type == type.Whitenoise) {
             return _context.getString(R.string.music_type_whitenoise);
+        } else if (_type == type.Nature) {
+            return _context.getString(R.string.music_type_nature);
         } else if (_type == type.Etc) {
             return _context.getString(R.string.music_type_etc);
         } else {
@@ -66,6 +69,8 @@ public class MusicConst {
             return _context.getString(R.string.music_type_jazz);
         } else if (_type.equals(type.Whitenoise.name())) {
             return _context.getString(R.string.music_type_whitenoise);
+        } else if (_type.equals(type.Nature.name())) {
+            return _context.getString(R.string.music_type_nature);
         } else if (_type.equals(type.Etc.name())) {
             return _context.getString(R.string.music_type_etc);
         } else {

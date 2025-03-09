@@ -36,6 +36,7 @@ public class MusicCategory {
         addMusicCategoryList(MusicConst.type.Classic.name(), MusicConst.getTypeName(mContext, MusicConst.type.Classic),"0");
         addMusicCategoryList(MusicConst.type.Jazz.name(), MusicConst.getTypeName(mContext, MusicConst.type.Jazz),"0");
         addMusicCategoryList(MusicConst.type.Whitenoise.name(), MusicConst.getTypeName(mContext, MusicConst.type.Whitenoise),"0");
+        addMusicCategoryList(MusicConst.type.Nature.name(), MusicConst.getTypeName(mContext, MusicConst.type.Nature),"0");
         addMusicCategoryList(MusicConst.type.Etc.name(), MusicConst.getTypeName(mContext, MusicConst.type.Etc),"0");
     }
 

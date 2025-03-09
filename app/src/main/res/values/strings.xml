@@ -17,6 +17,7 @@
     <string name="music_type_classic">클래식</string>
     <string name="music_type_jazz">재즈</string>
     <string name="music_type_whitenoise">백색소음</string>
+    <string name="music_type_nature">자연음</string>
     <string name="music_type_etc">기타</string>
 
     <!--  서브메인(타이틀) 화면  -->
