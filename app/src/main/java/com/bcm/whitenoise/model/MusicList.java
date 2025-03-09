@@ -30,8 +30,8 @@ public class MusicList {
     // 음악정보 배열생성 (여기에서 앱에 표시될 음악을 추가/삭제)
     private void makeMusicList() {
         //함수명,제목,작곡가,음악 총 재생시간,음악 파일명,이미지 파일명,gif 이미지 파일명
-        addMusicList(MusicConst.type.Meditation.name(),"우산에 부딧히는 빗소리","빗소리","30","no_1_emotional_piano_music","img_list_1","gif_no_1");
-        addMusicList(MusicConst.type.Goodnight.name(),"무라카미T 내가 사랑한 티셔츠","무라카미 하루키","112","no_2_summer_memories","img_list_2","gif_no_2");
+        addMusicList(MusicConst.type.Meditation.name(),"비오는 날 기분이 좋아지는 음악","창작음악","111","mp3_001_250302","list_001_250302","gif_001_250302");
+        addMusicList(MusicConst.type.Goodnight.name(),"맑은 날 기분이 전환되는 음악","창작음악","68","mp3_002_250302","list_002_250302","gif_002_250302");
         addMusicList(MusicConst.type.Sing.name(),"색체가 없는 다자키 쓰쿠루와 그가 순례를 떠난 해","무라카미 하루키","195","no_3_lost_in_dreams","img_list_3","gif_no_3");
         addMusicList(MusicConst.type.Meditation.name(),"세상에 빛나지 않는 별은 없어","김미라","96","no_4_stylish_deep_electronic","img_list_4","gif_no_4");
         addMusicList(MusicConst.type.Meditation.name(),"중국행 슬로보트","무라카미 하루키","90","no_5_motivational_background","img_list_5","gif_no_5");
